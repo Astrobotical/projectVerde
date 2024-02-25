@@ -8,7 +8,7 @@ import 'package:engine_part_app/searchpage.dart';
 //import 'package:engine_part_app/common_view.dart';
 
 void main() => runApp(ChangeNotifierProvider(
-          create: (context) => Jdatamodel(), child:Yapp()));
+          create: (context) => Jdatamodel(), child:const Yapp()));
 
 class Yapp extends StatelessWidget {
   const Yapp({super.key});
@@ -24,7 +24,7 @@ class Yapp extends StatelessWidget {
 }
 
 class MyNavigationBar extends StatefulWidget {
-  const MyNavigationBar({Key? key}) : super(key: key);
+  const MyNavigationBar({super.key});
 
   @override
   State<MyNavigationBar> createState() => _MyNavigationBarState();
@@ -37,7 +37,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
  
 
   static final List<Widget> _widgetOptions = [
-    Grid(),
+    const Grid(),
     const Text('Search Page',
         style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
     const ShoppingCart(),
@@ -79,7 +79,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
                    //do nothing
                     }
                     historylist.add(history(viewhistory: search1.text));
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => searchhistory(),));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const searchhistory(),));
                   
                     }, 
                     child: const Icon(Icons.mic_rounded, color: Colors.black),
@@ -103,6 +103,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
             const BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: ('Home'),
+            
           
             ),
             const BottomNavigationBarItem(
@@ -122,10 +123,11 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
             ),
           ],
           type: BottomNavigationBarType.shifting,
+          fixedColor: Colors.blue,
           currentIndex: _selectedIndex,
           selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.black,
-          iconSize: 20,
+          unselectedItemColor: Colors.blue,
+          iconSize: 15,
           onTap: _onItemTapped,
           elevation: 5),
       );
