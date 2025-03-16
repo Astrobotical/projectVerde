@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "193025014712",
+    "project_id": "projectverde-6c98b",
+    "storage_bucket": "projectverde-6c98b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193025014712:android:9435d7afa9fe334807ed4d",
+        "android_client_info": {
+          "package_name": "com.romarioburke.projectverde.projectverde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH7ruNdcrww0QsFkMLh7yb8q65K5WO6Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
