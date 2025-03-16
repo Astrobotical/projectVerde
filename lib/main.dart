@@ -10,6 +10,7 @@ import 'state/authentication/authentication_bloc.dart';
 import 'authentication/authMain.dart';
 import 'state/orders/orders_bloc.dart';
 import 'state/userOrders/user_orders_cubit.dart';
+import 'state/userProfile/user_profile_bloc.dart';
 void main() {
   runApp(
       MultiBlocProvider(
@@ -18,7 +19,8 @@ void main() {
            BlocProvider<OrdersBloc>(create:(context)=>OrdersBloc()..add(FetchOrders())),
             BlocProvider<ImageRecognitionBloc>(create: (context)=>ImageRecognitionBloc(AwsRekognitionService())),
             BlocProvider<FavouritesCubit>(create: (context)=>FavouritesCubit()),
-            BlocProvider<UserOrdersCubit>(create: (context)=>UserOrdersCubit())
+            BlocProvider<UserOrdersCubit>(create: (context)=>UserOrdersCubit()),
+            BlocProvider<UserProfileBloc>(create: (context)=>UserProfileBloc()..add(LoadProfile()))
       ]
           , child: MaterialApp(
             debugShowCheckedModeBanner: false,
