@@ -30,17 +30,13 @@ class _authMainState extends State<authMain> with TickerProviderStateMixin {
         body: Column(
   children: [
     SizedBox(
-      height: 200,
+      height: 170,
       child: Card(
         color: Theme.of(context).colorScheme.surface,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+        child:
             Center(
               child: Text("Project Verde",
-                  style: Theme.of(context).textTheme.headlineLarge)),
-          ],
-        ),
+                  style: Theme.of(context).textTheme.headlineLarge))
       ),
     ),
     DefaultTabController(

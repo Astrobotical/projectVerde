@@ -10,11 +10,11 @@ class Registrationtoggle extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 5,
       child: Column(
         children: [
-            SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+            SizedBox(height: 20),
           Text("Welcome what type of user are you?"),
-          SizedBox(height: MediaQuery.of(context).size.height * 0.05),
-          ElevatedButton(onPressed: (){}, child: Text("Everyday Ole User")),
-         SizedBox(height: MediaQuery.of(context).size.height * 0.005),
+          SizedBox(height: 10),
+          ElevatedButton(onPressed: (){}, child: Text("General User/Consumer")),
+           SizedBox(height: 10),
          ElevatedButton(onPressed: (){}, child: Text("Farmer"))
         ],
       ),
