@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:projectverde/authentication/signIn/LoginPage.dart';
 import 'package:projectverde/authentication/signUp/registrationtoggle.dart';
 import 'package:projectverde/state/authentication/authentication_bloc.dart';
 
@@ -60,7 +61,7 @@ class _authMainState extends State<authMain> with TickerProviderStateMixin {
                   child: TabBarView(
                     controller: _tabController,
                     children: [
-                      Center(child: Text('Sign In Form')),
+                     LoginWidget(),
                       Registrationtoggle(),
                     ],
                   ),

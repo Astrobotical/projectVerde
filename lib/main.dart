@@ -7,12 +7,21 @@ import 'package:projectverde/views/user/orders.dart';
 import 'package:projectverde/views/user/profile.dart';
 import 'package:projectverde/views/user/viewImage.dart';
 import 'Services/awsRekognitionService.dart';
+import 'firebase_options.dart';
 import 'state/authentication/authentication_bloc.dart';
 import 'authentication/authMain.dart';
 import 'state/orders/orders_bloc.dart';
 import 'state/userOrders/user_orders_cubit.dart';
+//import 'package:firebase_core/firebase_core.dart';
 import 'state/userProfile/user_profile_bloc.dart';
-void main() {
+void main() async{
+
+ /* WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  /
+  */
   runApp(
       MultiBlocProvider(
           providers:[
