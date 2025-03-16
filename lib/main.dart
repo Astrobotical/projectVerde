@@ -5,6 +5,7 @@ import 'package:projectverde/state/imageRecognition/image_recognition_bloc.dart'
 import 'package:projectverde/views/farmer/viewOrders.dart';
 import 'package:projectverde/views/user/orders.dart';
 import 'package:projectverde/views/user/profile.dart';
+import 'package:projectverde/views/user/viewImage.dart';
 import 'Services/awsRekognitionService.dart';
 import 'state/authentication/authentication_bloc.dart';
 import 'authentication/authMain.dart';
@@ -24,7 +25,7 @@ void main() {
       ]
           , child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            home : userProfile()
+            home : authMain()
           )
       ));
 
