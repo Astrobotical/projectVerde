@@ -5,8 +5,8 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 
 class AwsRekognitionService {
-  final String accessKey = "AWSACCESSKEYFROMBACKEND";
-  final String secretKey = "AWSSECRETFROMBACKEND";
+  final String accessKey = "AKIAW3MD7IOMDQWZQLOQ ";
+  final String secretKey = "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";
   final String region = "us-east-1";
 
   Future<String> analyzeImage(File imageFile) async {
