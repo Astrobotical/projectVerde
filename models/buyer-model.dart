@@ -7,14 +7,13 @@ class Buyer extends User {
     required String id,
     required Name name,
     required String email,
-    required Coordinates coordinates,
     double walletBalance = 0.0,
     this.favoriteFoods = const [],
   }) : super(
           id: id,
           name: name,
           email: email,
-          coordinates: coordinates,
+
           walletBalance: walletBalance,
         );
 

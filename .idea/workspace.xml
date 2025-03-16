@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0055858e-7058-40d6-9470-656ab82708a1" name="Changes" comment="#Added: the favourites.dart and profile.dart pages">
-      <change afterPath="$PROJECT_DIR$/lib/customWidgets/favouritesContainer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/favourites/favourites_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/favourites/favourites_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/userOrders/user_orders_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/userOrders/user_orders_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Services/awsRekognitionService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Services/awsRekognitionService.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/user/favourites.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/user/favourites.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/user/orders.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/user/orders.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/user/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/user/profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/transaction-model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/models/transaction-model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user-model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/models/user-model.dart" afterDir="false" />
-    </list>
+    <list default="true" id="0055858e-7058-40d6-9470-656ab82708a1" name="Changes" comment="#Added: added, updated some files..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742099479416</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#Added: added, updated some files...">
+      <option name="closed" value="true" />
+      <created>1742119125631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742119125632</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +187,7 @@
     <MESSAGE value="#Added: the Image recognition bloc and service files page." />
     <MESSAGE value="#Updated: Some workfiles." />
     <MESSAGE value="#Added: the favourites.dart and profile.dart pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="#Added: the favourites.dart and profile.dart pages" />
+    <MESSAGE value="#Added: added, updated some files..." />
+    <option name="LAST_COMMIT_MESSAGE" value="#Added: added, updated some files..." />
   </component>
 </project>
