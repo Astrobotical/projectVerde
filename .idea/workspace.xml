@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0055858e-7058-40d6-9470-656ab82708a1" name="Changes" comment="#Added: the userHome.dart and farmerHome.dart to the project">
-      <change afterPath="$PROJECT_DIR$/lib/splashScreen/splashScreen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/authentication/authentication_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/authentication/authentication_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/state/authentication/authentication_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/farmer/catalog.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/farmer/viewOrders.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/user/cart.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/user/orders.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/user/viewImage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="0055858e-7058-40d6-9470-656ab82708a1" name="Changes" comment="#Updated: Some workfiles.">
+      <change afterPath="$PROJECT_DIR$/lib/views/user/favourites.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/views/user/profile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/user/userHome.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/user/userHome.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +31,23 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Astrobotical"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Astrobotical/projectVerde.git",
+    "accountId": "03e82047-aaad-456b-bae0-cccb1c65a228"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2uMfVgJzpECcjYlb3ZcoBWFSUsi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,13 +56,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter.main.dart.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.keymap",
     "show.migrate.to.gradle.popup": "false"
@@ -101,7 +103,55 @@
       <option name="project" value="LOCAL" />
       <updated>1742068557053</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#Added: the backend server and modified the auth Main">
+      <option name="closed" value="true" />
+      <created>1742082797510</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742082797510</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#Added: the ordersbloc and made minor changes to the registrationtoggle.dart and authMain.dart pages.">
+      <option name="closed" value="true" />
+      <created>1742087251411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742087251411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#Added: the ordersbloc and made minor changes to the cart bloc.dart and authMain.dart pages.">
+      <option name="closed" value="true" />
+      <created>1742095402025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742095402025</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#Updated: the viewOrders.dart page.">
+      <option name="closed" value="true" />
+      <created>1742095449810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742095449810</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#Added: the Image recognition bloc and service files page.">
+      <option name="closed" value="true" />
+      <created>1742095512978</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742095512978</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#Updated: Some workfiles.">
+      <option name="closed" value="true" />
+      <created>1742095734958</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742095734958</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +168,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#Update:Initial push after created the project with the authentication folder and the signIn/signUp folders." />
     <MESSAGE value="#Added: the userHome.dart and farmerHome.dart to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="#Added: the userHome.dart and farmerHome.dart to the project" />
+    <MESSAGE value="#Added: the backend server and modified the auth Main" />
+    <MESSAGE value="#Added: the ordersbloc and made minor changes to the registrationtoggle.dart and authMain.dart pages." />
+    <MESSAGE value="#Added: the ordersbloc and made minor changes to the cart bloc.dart and authMain.dart pages." />
+    <MESSAGE value="#Updated: the viewOrders.dart page." />
+    <MESSAGE value="#Added: the Image recognition bloc and service files page." />
+    <MESSAGE value="#Updated: Some workfiles." />
+    <option name="LAST_COMMIT_MESSAGE" value="#Updated: Some workfiles." />
   </component>
 </project>
