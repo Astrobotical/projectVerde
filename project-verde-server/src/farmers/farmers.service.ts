@@ -8,7 +8,7 @@ import { Farmer, FarmerDocument } from "../users/users.schema";
 @Injectable()
 export class FarmersService {
   constructor(
-    @InjectModel(Farmer.name) private farmerModel: Model<FarmerDocument>, // ✅ Ensure FarmerModel is injected correctly
+    @InjectModel(Farmer.name) private farmerModel: Model<FarmerDocument>,
     @Inject(forwardRef(() => UsersService)) private readonly usersService: UsersService,
     @Inject(forwardRef(() => AuthenticationService)) private readonly authenticationService: AuthenticationService,
   ) {}

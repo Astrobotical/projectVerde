@@ -4,7 +4,7 @@ import { Food } from '../food/schema/food.schema';
 
 export type UserDocument = User & Document;
 
-@Schema()
+@Schema({ _id: false })
 export class Rating {
   @Prop({ required: true })
   raters: number;
@@ -13,7 +13,7 @@ export class Rating {
   totalRating: number;
 }
 
-@Schema()
+@Schema({ _id: false })
 export class Name {
   @Prop({ required: true })
   firstName: string;
@@ -24,7 +24,7 @@ export class Name {
 
 export const NameSchema = SchemaFactory.createForClass(Name);
 
-@Schema()
+@Schema({ _id: false })
 export class Coordinates {
   @Prop({ required: true })
   latitude: number;
@@ -35,7 +35,7 @@ export class Coordinates {
 
 export const CoordinatesSchema = SchemaFactory.createForClass(Coordinates);
 
-@Schema()
+@Schema({ _id: false })
 export class AvailableItem {
   @Prop({ type: Types.ObjectId, ref: Food.name, required: true })
   itemId: string;
@@ -73,7 +73,7 @@ export type FarmerDocument = Farmer & Document;
 
 @Schema()
 export class Farmer extends User {
-  @Prop({ required: true, default: 0 })
+  @Prop({ type: Rating, required: true, default: { raters: 0, totalRating: 0 } })
   rating: Rating;
 
   @Prop({ type: [AvailableItemSchema], default: [] })

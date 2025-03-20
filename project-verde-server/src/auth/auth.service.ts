@@ -39,33 +39,25 @@ export class AuthenticationService {
 
   async validateUser(email: string, password: string): Promise<JwtPayload | null> {
     const user = await this.userCredentialsModel.findOne({ email });
-
+  
     if (user && await bcrypt.compare(password, user.password)) {
-      const userInfo = await this.usersService.findUserById(user._id);
-
+      // Now checking both farmer and buyer models
+      const userInfo = await this.usersService.findUserById(new Types.ObjectId(user._id));
+  
       if (!userInfo) {
         throw new BadRequestException("Please complete registration before attempting to log in");
       }
-
+  
       const payload: JwtPayload = {
         sub: user._id.toString(),
         email: user.email,
+        userType: userInfo.userType, // Ensure userType is included
       };
-
-      const optionalFields = ['seekerId', 'ownerId', 'professionalId'];
-      optionalFields.forEach(field => {
-        if (userInfo[field]) {
-          payload[field] = userInfo[field];
-        }
-      });
-
-      console.log(payload);
       return payload;
     }
-
     return null;
   }
-
+  
   async validateUserById(userId: Types.ObjectId): Promise<any> {
     return this.userCredentialsModel.findById(userId).exec();
   }

@@ -19,23 +19,40 @@ export class UsersService {
     return this.userModel.find().exec();
   }
 
-  async findUserById(userId: Types.ObjectId): Promise<User> {
-    const user = await this.userModel.findById(userId).exec();
-    if (!user) {
-      throw new NotFoundException(`User with ID ${userId} not found`);
+  async findUserById(userId: Types.ObjectId): Promise<Farmer | Buyer> {
+    let farmer = await this.farmerModel.findById(userId).exec();
+    
+    if (!farmer) {
+      let buyer = await this.buyerModel.findById(userId).exec();
+      if (!buyer) {
+        throw new NotFoundException(`User with ID ${userId} not found`);
+      }
+      return buyer;
     }
-    return user;
+    return farmer;
   }
+  
 
   async createUser(user: Partial<User>): Promise<User> {
     const { exists, userId } = await this.authenticationService.userExistsByEmail(user.email);
     if (!exists) {
-      throw new BadRequestException("Please register before creating user");
+      throw new BadRequestException("Please register before creating a user");
     }
+  
     user._id = userId.toString();
-    const newUser = new this.userModel(user);
+  
+    let newUser: UserDocument;
+  
+    if (user.userType === 'Farmer') {
+      newUser = new this.farmerModel(user);
+    } else if (user.userType === 'Buyer') {
+      newUser = new this.buyerModel(user);
+    } else {
+      throw new BadRequestException("Invalid user type");
+    }
+  
     return newUser.save();
-  }
+  }  
 
   async updateUser(userId: Types.ObjectId, updatedUser: UpdateUserDto): Promise<User> {
     return this.userModel.findByIdAndUpdate(userId, updatedUser, { new: true }).exec();
