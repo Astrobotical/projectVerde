@@ -31,13 +31,17 @@ class _authMainState extends State<authMain> with TickerProviderStateMixin {
         body: Column(
   children: [
     SizedBox(
-      height: 170,
+      height: 200,
       child: Card(
         color: Theme.of(context).colorScheme.surface,
-        child:
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
             Center(
               child: Text("Project Verde",
-                  style: Theme.of(context).textTheme.headlineLarge))
+                  style: Theme.of(context).textTheme.headlineLarge)),
+          ],
+        ),
       ),
     ),
     DefaultTabController(
@@ -61,7 +65,7 @@ class _authMainState extends State<authMain> with TickerProviderStateMixin {
                   child: TabBarView(
                     controller: _tabController,
                     children: [
-                     LoginWidget(),
+                      LoginWidget(),
                       Registrationtoggle(),
                     ],
                   ),

@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
+import '../../models/buyer-model.dart';
 import '../../models/user-model.dart';
-import '../../views/user/profile.dart';
 part 'user_profile_event.dart';
 part 'user_profile_state.dart';
 
